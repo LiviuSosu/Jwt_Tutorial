@@ -7,9 +7,9 @@ using TokenDemoDonNetCore3._1.Services;
 
 namespace TokenDemoDonNetCore3._1.Controllers
 {
-    [Route("api/[controller]")]
-    [Authorize]
     [ApiController]
+    [Authorize]
+    [Route("[controller]")]
     public class UsersController : ControllerBase
     {
         private IUserService _userService;
